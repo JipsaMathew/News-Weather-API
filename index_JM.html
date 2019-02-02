@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>News and Weather App</title>
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="index_script.js"></script>
+		<script async defer type="text/javascript"
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxWfSNAwg7tmeD81eVUvYjhwf6uq4jeJ8&callback=initMap"></script>
+		<link rel="stylesheet" type="text/css" href="index_style.css">
+			
+	</head>
+	<body>
+
+		<div class="header"><strong>News and Weather App</strong></div>
+		<div id="mapContainer">
+			
+			<div id="map"></div>
+			<div id="weather">
+				<input id="address" type="text" placeholder="Search City,zip or place">
+				<input id="submit" type="button" value="Get Weather and News">
+				<table>
+				<th>Weather Data</th>
+				<tr><td>Temperature:</td><td><span id="temp"></span></td></tr>
+				<tr><td>Maximum Temperature:</td><td><span id="maxtemp"></td></tr></span>
+				<tr><td>Minimum Temperature:</td><td><span id="mintemp"></td></tr></span>
+				<tr><td>Current Humidity:</td><td><span id="humidity"></td></tr></span>
+				<tr><td>Current Pressure:</td><td><span id="pressure"></td></tr></span>
+				</table>
+			<div id="news"></div>
+			</div>
+			
+		</div>	
+	</body>
+</html>
