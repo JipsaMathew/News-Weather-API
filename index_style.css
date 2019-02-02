@@ -1,0 +1,39 @@
+
+		.header {
+    background-color: grey;
+    color: #ABEBC6;
+    padding: 15px;
+	font-size: 34px;
+	width:100%;
+}
+
+		#address{
+			padding: 6px 25px;
+		}
+		
+		#submit{
+			padding: 5px;
+		}
+		
+		#mapContainer{
+			width:100%;
+			display:inline-block;
+		}
+		#mapContainer > div{
+			display:inline-block;
+			float:left;
+			width:49%;
+			margin:20px 0.5%;
+			height: 400px;
+		}
+		.title-text{
+		font-size:16px;
+		color:blue;
+		font-weight:bold;
+		}
+	@media only screen and (max-width: 500px) {
+    #mapContainer > div{
+		width:98%;
+		float: right;
+	}
+}
